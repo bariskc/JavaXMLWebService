@@ -41,8 +41,7 @@ public class MainActivity extends AppCompatActivity {
                 Doviz seciliDoviz = dovizler.get(position);
                 Toast.makeText(MainActivity.this, seciliDoviz.toString(), Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getApplicationContext(), DovizActivity.class);
-                //intent.putExtra("Deneme", "1");
-                intent.putExtra("Doviz", seciliDoviz);
+                intent.putExtra("doviz", seciliDoviz);
                 startActivity(intent);
             }
         });
