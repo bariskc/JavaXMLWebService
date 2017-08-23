@@ -22,6 +22,7 @@ public class DovizActivity extends AppCompatActivity {
         Intent intent = getIntent();
         //String mesaj = intent.getStringExtra("Deneme");
         Doviz gelenDoviz = (Doviz) intent.getSerializableExtra("doviz");
+        textView.setText(gelenDoviz.toString());
         //textView.setText(mesaj);
     }
 }
